@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.cabecalho {
+  display: flex;
+  background-color: #861fb5;
+  padding: 15px;
+}
+
+.logo {
+  position: absolute;
+  width: 150px;
+  align-items: center;
+  margin: 0 auto;
+  margin-left: 20px;
+  margin-top: 8px;
+}
+
+.local {
+  color: #fff;
+  background-color: #b8ad66;
+  font-family: "Baloo Bhaina 2", sans-serif;
+  font-weight: 500;
+  border-radius: 10px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 15px;
+  width: 210px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.seetings {
+  display: flex;
+  align-items: center;
+}
