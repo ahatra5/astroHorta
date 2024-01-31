@@ -40,10 +40,20 @@
 }
 
 .principal {
+  padding: 15px;
   border: 1px solid red;
   margin: 75px auto;
   align-items: center;
   justify-content: center;
-  width: 75%;
-  height: 650px;
+  width: 85%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+}
+
+.luas,
+.calendario {
+  height: 600px;
+  text-align: center;
+  border: red solid;
 }
