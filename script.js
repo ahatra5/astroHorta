@@ -35,3 +35,4 @@ images[3].style.opacity = '1';
 
 // Chamando a função updateCarrossel inicialmente para exibir a primeira imagem
 updateCarrossel();
+

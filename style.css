@@ -6,7 +6,7 @@
 
 .cabecalho {
   display: flex;
-  background-color: #861fb5;
+  background-color: #52008c;
   padding: 25px;
 }
 
@@ -40,10 +40,10 @@
 }
 
 body {
-  background-color: #9632c5;
+  background-color: #6f02bc;
 }
 
-.principal {
+.container {
   padding: 15px;
   border: 1px solid red;
   margin: 75px auto;
@@ -55,15 +55,29 @@ body {
   grid-gap: 15px;
 }
 
-.luas,
-.calendario {
+.carrossel-container,
+.calendario-container {
   text-align: center;
   border: red solid;
 }
 
+.calendario-container {
+  border: red solid;
+  position: relative;
+  max-width: 500px;
+  width: 500px;
+  max-height: 500px;
+  height: 500px;
+  padding: 20px;
+  margin: auto;
+  overflow: hidden; /* Adicionado para esconder qualquer conteúdo adicional que possa vazar */
+  background-color: #599e88;
+  border-radius: 40px;
+}
+
 .carrossel-container {
   position: relative;
-  max-width: 600px;
+  max-width: 500px;
   margin: auto;
   overflow: hidden; /* Adicionado para esconder qualquer conteúdo adicional que possa vazar */
 }
@@ -74,23 +88,28 @@ body {
 }
 
 .carrossel-img {
-  margin: 48px;
-  height: 500px;
+  margin: 100px;
+  height: 300px;
 }
 
 button {
   border: 0;
   background-color: transparent;
   position: absolute;
-  top: 50%;
-  padding: 20px;
+  top: 40%;
+  padding: 30px;
   cursor: pointer;
 }
 
 #prevBtn {
-  left: -15px;
+  left: -30px;
 }
 
 #nextBtn {
-  right: -15px;
+  right: -30px;
+}
+
+.fase-lunar {
+  color: #52008c; /* Cor roxa */
+  font-weight: bold;
 }
