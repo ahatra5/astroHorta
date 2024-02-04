@@ -1,3 +1,11 @@
+@font-face {
+  font-family: lemonMilk;
+  src: url("fonts/LEMONMILK-Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -45,7 +53,6 @@ body {
 
 .container {
   padding: 15px;
-  border: 1px solid red;
   margin: 75px auto;
   align-items: center;
   justify-content: center;
@@ -56,13 +63,16 @@ body {
 }
 
 .carrossel-container,
-.calendario-container {
+
+
+/* CodingNepal YOUTUBE CREDS */
+/* CALENDARIO */
+
+.wrapper {
   text-align: center;
-  border: red solid;
 }
 
-.calendario-container {
-  border: red solid;
+.wrapper {
   position: relative;
   max-width: 500px;
   width: 500px;
@@ -72,8 +82,102 @@ body {
   margin: auto;
   overflow: hidden; /* Adicionado para esconder qualquer conteúdo adicional que possa vazar */
   background-color: #599e88;
-  border-radius: 40px;
+  border-radius: 70px;
 }
+
+.wrapper header {
+  border-radius: 70px;
+  background-color: #60aa93;
+  display: flex;
+  align-items: center;
+  padding: 25px 30px 20px;
+  justify-content: space-between;
+  font-family: "inter";
+}
+
+header .icons {
+  display: flex;
+}
+header .icons span {
+  height: 38px;
+  width: 38px;
+  margin: 0 1px;
+  cursor: pointer;
+  color: #bae6a3;
+  text-align: center;
+  line-height: 38px;
+  font-size: 1.9rem;
+  user-select: none;
+  border-radius: 50%;
+}
+.icons span:last-child {
+  margin-right: -10px;
+}
+header .icons span:hover {
+  background: #f2f2f2;
+}
+header .current-date {
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+.calendar {
+  padding: 20px;
+  font-family: lemonMilk;
+}
+.calendar ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+}
+.calendar .days {
+  margin-bottom: 20px;
+}
+.calendar li {
+  color: #333;
+  width: calc(100% / 7);
+  font-size: 1.07rem;
+}
+
+.calendar li:hover {
+  color: #ffd466;
+}
+
+.calendar .weeks li {
+  font-weight: 500;
+  cursor: default;
+}
+.calendar .days li {
+  z-index: 1;
+  position: relative;
+  margin-top: 30px;
+}
+.days li.inactive {
+  visibility: hidden;
+}
+.days li.active {
+  color: #fff;
+}
+.days li::before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  z-index: -1;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.days li.active::before {
+  background: #7300a9;
+}
+.days li:not(.active):hover::before {
+  background: #7300a9;
+}
+
+/* CALENDARIO */
+/* CodingNepal YOUTUBE CREDS */
 
 .carrossel-container {
   position: relative;
@@ -107,9 +211,4 @@ button {
 
 #nextBtn {
   right: -30px;
-}
-
-.fase-lunar {
-  color: #52008c; /* Cor roxa */
-  font-weight: bold;
 }
