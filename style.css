@@ -19,6 +19,7 @@
 }
 
 .logo {
+  display: flex;
   position: absolute;
   width: 200px;
   align-items: center;
@@ -43,6 +44,7 @@
 }
 
 .seetings {
+  position: relative;
   display: flex;
   align-items: center;
 }
@@ -211,4 +213,12 @@ button {
 
 #nextBtn {
   right: -30px;
+}
+
+.config {
+  display: flex;
+  justify-content: center;
+
+  margin: 0 auto;
+  padding: 15px;
 }
